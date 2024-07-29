@@ -1,0 +1,263 @@
+header {
+    color: white;
+    background: hsl(128, 100%, 24%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 5px 5px black;
+    padding: 1px;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+}
+
+aside {
+    color: black;
+    width: 20%;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#search-box {
+    width: 97%;
+
+}
+
+
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 1px;
+    background: rgb(196, 196, 196);
+}
+
+footer {
+    background: hsl(128, 100%, 24%);
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px;
+}
+
+.second-title {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.subheader {
+    color: rgb(93, 93, 93);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1px;
+}
+
+select {
+    position: flex;
+    padding: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 25px;
+    background: rgb(200, 200, 200);
+    border-radius: 5px;
+
+}
+
+button {
+    margin-top: 15px;
+    padding: 5px;
+    color: white;
+    background: hsl(128, 100%, 24%);;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.circle-container {
+    display: flex;
+    /* flex-direction: column;*/
+    align-items: flex;
+}
+
+.circle-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.circle.not-threatened {
+    background-color: #02a028;
+}
+
+.circle.naturally-uncommon {
+    background-color: #649a31;
+}
+
+.circle.relict {
+    background-color: #99cb68;
+}
+
+.circle.recovering {
+    background-color: #fecc33;
+}
+
+.circle.declining {
+    background-color: #fecc33;
+}
+
+.circle.nationally-increasing {
+    background-color: #c26967;
+}
+
+.circle.nationally-vulnerable {
+    background-color: #9b0000;
+}
+
+.circle.nationally-endangered {
+    background-color: #660032;
+}
+
+.circle.nationally-critical {
+    background-color: #320033;
+}
+
+.circle.extinct {
+    background-color: black;
+}
+
+.circle.data-deficient {
+    background-color: black;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    width: 400px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+  
+}
+
+.card-container{
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-primary-name {
+    font-size: 1.5rem;
+    position: absolute;
+    text-shadow: 2px 2px black;
+    font-family: 'Montserrat', sans-serif;
+    top: 50px;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.bird-credit{
+    font-size: 10px;
+    position: absolute;
+    text-shadow: 1px 1px black;
+    font-family: 'Montserrat', sans-serif;
+    top: 100px;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.card-titles {
+
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 1px;
+    font-size: 12px;
+    line-height:5px;
+    /*display:flex;*/
+    /* justify-content: space-between;
+   align-items: center;
+     */
+   
+
+}
+.card-circle{
+    position: absolute;
+    border: 3px solid white;
+    box-sizing: border-box;
+    top: 235px;
+    right: 50px;
+    bottom: 1px;
+    width: 50px;
+    height: 50px;
+    /*background-color: red;*/
+    border-radius: 50%;
+}
+.card-attributes {
+    
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hr{
+    color:gray; 
+    size: 2px; 
+    width: 100%;
+}

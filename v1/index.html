@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <link href="./style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Oswald:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title>Bird Site</title>
+</head>
+
+<body>
+    <header>
+        <h1> Birds of Aotearoa </h1>
+    </header>
+    <div class="flex-container">
+        <aside>
+            <h2 class="second-title">Filter Birds </h2>
+            <h3 class="subheader">Search</h3>
+            <input type="text" id="search-box" placeholder="Search..">
+            <script src="node.js"></script>
+            <h3 class="subheader">Conservation Status</h3>
+
+            <select id="conservationFilter">
+                <option value="All">All</option>
+                <option value="Not Threatened">Not Threatened</option>
+                <option value="Naturally Uncommon">Naturally Uncommon</option>
+                <option value="Relict">Relict</option>
+                <option value="Recovering">Recovering</option>
+                <option value="Decline">Decline</option>
+                <option value="Nationally Increasing">Nationally Increasing</option>
+                <option value="Nationally Vulnerable">Nationally Vulnerable</option>
+                <option value="Nationally Endangered">Nationally Endangered</option>
+                <option value="Nationally Critical">Nationally Critical</option>
+                <option value="Extinct">Extinct</option>
+                <option value="Data Deficient">Data Deficient</option>
+
+            </select>
+            <h3 class="subheader">Sort by</h3>
+            <select id = "sortFilter">
+                <option value="A-Z">Alphabetical A-Z</option>
+                <option value="Z-A">Alphabetical Z-A</option>
+                <option value="WeightHL">Weight (Heaviest to Lightest)</option>
+                <option value="WeightLH">Weight (Lightest to Heaviest)</option>
+                <option value="LengthLS">Length (Longest to Shortest)</option>
+                <option value="LengthSL">Length (Shortest to Longest)</option>
+            </select>
+
+            <button id="searchButton">Filter Results </button>
+
+            <p id = "filter-result-count" class = "subheader">h</p>
+
+            <hr id = hr>
+
+            <h2 class="second-title">Conservation Status </h2>
+
+            <div class="circle-container">
+                <div class="circle not-threatened"></div>
+                <div class="circle-text">Not Threatened</div>
+            </div>
+
+            <div class="circle-container">
+                <div class="circle naturally-uncommon"></div>
+                <div class="circle-text">Naturally Uncommon</div>
+            </div>
+
+            <div class="circle-container">
+                <div class="circle relict"></div>
+                <div class="circle-text">Relict</div>
+            </div>
+
+            <div class="circle-container">
+                <div class="circle recovering"></div>
+                <div class="circle-text">Recovering</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle declining"></div>
+                <div class="circle-text">Decline</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle nationally-increasing"></div>
+                <div class="circle-text">Nationally Increasing</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle nationally-vulnerable"></div>
+                <div class="circle-text">Nationally Vulnerable</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle nationally-endangered"></div>
+                <div class="circle-text">Nationally Endangered</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle nationally-critical"></div>
+                <div class="circle-text">Nationally Critical</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle extinct"></div>
+                <div class="circle-text">Extinct</div>
+            </div>
+            <div class="circle-container">
+                <div class="circle data-deficient"></div>
+                <div class="circle-text">Data Deficient</div>
+            </div>
+
+            <p class = "subheader">
+            Conservation status from <a href="https://www.doc.govt.nz/nature/conservation-status/">DOC website</a>
+            </p>
+
+        </aside>
+        <main>
+                <div class="card-container"></div>
+                <script src="node.js"></script>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            Data licensed from <a href="https://www.birdsnz.org.nz/">Birds New Zealand</a> for educational
+            use within the University of Otago
+        </p>
+    </footer>
+</body>
+
+</html>
