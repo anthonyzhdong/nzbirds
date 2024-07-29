@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Bird</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src='/js/photo_preview.js'></script>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+        <aside>
+            <a class="button" href="/birds">Home</a>
+            <a class="button" href="/birds/create">Create New Bird</a>
+
+            <h2>Conservation Status</h2>
+            <ul>
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #02a028"></div>
+                    <span>
+                        Not Threatened
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #649a31"></div>
+                    <span>
+                        Naturally Uncommon
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #99cb68"></div>
+                    <span>
+                        Relict
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #fecc33"></div>
+                    <span>
+                        Recovering
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #fe9a01"></div>
+                    <span>
+                        Declining
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #c26967"></div>
+                    <span>
+                        Nationally Increasing
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #9b0000"></div>
+                    <span>
+                        Nationally Vulnerable
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #660032"></div>
+                    <span>
+                        Nationally Endangered
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #320033"></div>
+                    <span>
+                        Nationally Critical
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #000000"></div>
+                    <span>
+                        Extinct
+                    </span>
+                </li>
+
+                <li style="position: relative;">
+                    <div class="circle-small" style="background: #000000"></div>
+                    <span>
+                        Data Deficient
+                    </span>
+                </li>
+
+            </ul>
+            <p>Conservation status from <a href="https://www.doc.govt.nz/nature/conservation-status/">DOC website</a>
+            </p>
+
+        </aside>
+        <main id="birds">
+            <div>
+                <h2>Create Bird</h2>
+                <form action="/birds/create" method="POST" enctype="multipart/form-data">
+
+
+                    <fieldset>
+                        <legend>Common Names</legend>
+                        <label for="primary_name">Primary Name</label>
+                        <input type="text" name="primary_name" value="" required>
+
+                        <label for="english_name">English Name</label>
+                        <input type="text" name="english_name" value="" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Taxonomy</legend>
+                        <label for="scientific_name">Scientific Name</label>
+                        <input type="text" name="scientific_name" value="" required>
+
+                        <label for="order_name">Order</label>
+                        <input type="text" name="order_name" value="" required>
+
+                        <label for="family">Family</label>
+                        <input type="text" name="family" value="" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Size</legend>
+                        <label for="length">Length (cm)</label>
+                        <input type="number" name="length" value="">
+
+                        <label for="weight">Weight (g)</label>
+                        <input type="number" name="weight" value="">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Conservation</legend>
+                        <label for="status_id">Status</label>
+                        <select name="status_id" id="status">
+
+                            <option value="1" selected>Not Threatened</option>
+
+                            <option value="2">Naturally Uncommon</option>
+
+                            <option value="3">Relict</option>
+
+                            <option value="4">Recovering</option>
+
+                            <option value="5">Declining</option>
+
+                            <option value="6">Nationally Increasing</option>
+
+                            <option value="7">Nationally Vulnerable</option>
+
+                            <option value="8">Nationally Endangered</option>
+
+                            <option value="9">Nationally Critical</option>
+
+                            <option value="10">Extinct</option>
+
+                            <option value="11">Data Deficient</option>
+
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Photo</legend>
+                        <label for="photographer">Photo Credit</label>
+                        <input type="text" name="photographer" value="" required>
+
+                        <label for="photo_upload">Upload New Photo</label>
+                        <input type="file" name="photo_upload" id="photo_upload">
+
+                        <label for="photo_source">Photo Preview</label>
+                        <img id="photo_preview" src="" alt="Photo of Upload">
+                        <input id="upload_source" type="text" name="photo_source" value="" readonly="readonly">
+                    </fieldset>
+
+                    <button class="button" type="submit">Save Bird</button>
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <p>
+                Data licensed from <a href="https://www.birdsnz.org.nz/">Birds New Zealand</a> for educational use
+                within the University of Otago.
+            </p>
+        </footer>
+</body>
+
+</html>
