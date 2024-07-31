@@ -35,11 +35,6 @@ Birds of Aotearoa is a web application that provides information on different bi
     ```bash
     http-server
     ```
-   Alternatively, if you prefer using `live-server`:
-    ```bash
-    npm install -g live-server
-    live-server
-    ```
 
 5. Open your web browser and navigate to the provided URL, typically `http://127.0.0.1:8080`.
 
