@@ -1,4 +1,10 @@
-# nzbirds
+# Birds of Aotearoa
 
-npm install -g http-server
-http://localhost:8080 or whatever in terminal
+## Overview
+
+This project is divided into two main parts:
+
+1. **Front-end web application - README.md can be found in the v1 folder**
+
+2. **Back-end web application - README.md can be found in the v2 folder**
+

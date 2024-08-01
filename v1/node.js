@@ -19,22 +19,8 @@ async function fetchData() {
 async function initialiseBirds() {
     dataArray = await fetchData();
     for (let x = 0; x < dataArray.length; x++) {
-        // let bird = document.createElement('div');
-        // bird.setAttribute('class', 'bird-profile');
-
 
         const birdObject = {
-            // primary_name: dataArray[x].primary_name,
-            // englishName: dataArray[x].english_name,
-            // scientificName: dataArray[x].scientific_name,
-            // order: dataArray[x].order,
-            // family: dataArray[x].family,
-            // conservationStatus: dataArray[x].status,
-            // weight: dataArray[x].size.weight.value,
-            // length: dataArray[x].size.length.value,
-            // birdImage: dataArray[x].photo.source,
-            // birdCredit: dataArray[x].photo.credit
-
             primary_name: dataArray[x].primary_name,
             english_name: dataArray[x].english_name,
             scientific_name: dataArray[x].scientific_name,
@@ -75,8 +61,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function display(fetchData) {
-
-
 
     const cardContainer = document.querySelector('.card-container');
     let resultCount = document.getElementById("filter-result-count");

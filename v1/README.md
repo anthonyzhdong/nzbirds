@@ -14,12 +14,12 @@ A website to explore and learn about various bird species in New Zealand.
 
 ## Description
 
-Birds of Aotearoa is a web application that provides information on different bird species found in New Zealand, including their conservation status, scientific name, and more. The app allows users to search, filter, and sort bird species based on various criteria.
+Birds of Aotearoa is a front-end web application that provides information on different bird species found in New Zealand. Created using a combination of JavaScript, HTML and CSS. This web application allows users to search and filter through the bird species based on various criteria. 
 
 ## Installation
 
 1. Clone the repository:
-    ```bash
+    ```
     git clone https://github.com/anthonyzhdong/nzbirds.git
     cd nzbirds/v1
     ```
@@ -27,12 +27,12 @@ Birds of Aotearoa is a web application that provides information on different bi
 2. Ensure you have [Node.js](https://nodejs.org/) installed.
 
 3. Install a local web server if you haven't already. For example:
-    ```bash
+    ```
     npm install -g http-server
     ```
 
 4. Start the web server:
-    ```bash
+    ```
     http-server
     ```
 
@@ -81,6 +81,8 @@ SOFTWARE.
 
 - Data licensed from [Birds New Zealand](https://www.birdsnz.org.nz/) for educational use within the University of Otago.
 - Conservation status information from the [DOC website](https://www.doc.govt.nz/nature/conservation-status/).
+- Images provided by individual bird photographers all across New Zealand.
+
 
 ## Contact Information
 
