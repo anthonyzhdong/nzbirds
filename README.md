@@ -1,5 +1,7 @@
 # Birds of Aotearoa
 
+Front and backend application to display native New Zealand birds.
+
 ## Overview
 
 This project is divided into two main parts:
